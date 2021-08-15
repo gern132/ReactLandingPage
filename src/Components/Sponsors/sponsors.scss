@@ -1,0 +1,11 @@
+.sponsors {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 8%;
+    opacity: 0.3;
+
+    svg {
+        margin: 0 5px
+    }
+}

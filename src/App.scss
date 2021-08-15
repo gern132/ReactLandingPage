@@ -1,0 +1,18 @@
+@import './Components/Header/header.scss';
+@import './Components/Main/main.scss';
+@import './Components/Sponsors/sponsors.scss';
+@import './Components/Route/About/about.scss';
+@import './Components/Auth/auth.scss';
+@import '~materialize-css/dist/css/materialize.min.css';
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background: url(./img/Frame.svg) 90% 40% no-repeat,
+                url(./img/FrameButtom.svg) 50% 190% no-repeat fixed,
+                #3b1d6098;
+    background-size: auto, auto, cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}

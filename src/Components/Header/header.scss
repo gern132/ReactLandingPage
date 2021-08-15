@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
+.header {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-top: 2%;
+
+    .navigation ul {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        
+        li {
+            margin: 0 10px;
+            font-family: 'Nanum Gothic', sans-serif;
+            font-size: 16px;
+            cursor: pointer;
+
+            a {
+                text-decoration: none;
+                color: #B5B5B5;
+                transition: .3s;
+
+                &:hover {
+                    transition: .3s;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    .auth {
+        outline: none;
+
+        button {
+            padding: 10px 30px;
+            border-radius: 3px;
+            font-family: 'Rubik', sans-serif;
+            font-size: 14px;
+            cursor: pointer;
+            border: 1px solid #F2994A;
+        }
+        .sign__in {
+            margin-right: 15px;
+            color: #F2994A;
+            background: none;
+            transition: .3s;
+
+            &:hover {
+                transition: .3s;
+                color: #fff;
+                border: 1px solid #fff;
+            }
+        }
+        .sign__up {
+            background: #F2994A;
+            color: white;
+            transition: .3s;
+
+            &:hover {
+                transition: .3s;
+                border: 1px solid #fff;
+                background: #f2984a1c;
+            }
+        }
+    }
+    .navigation a.active {
+        transition: .3s;
+        color: white;
+    }
+}

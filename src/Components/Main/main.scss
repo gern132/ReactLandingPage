@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
+@mixin button {
+    padding: 12px 30px;
+    border-radius: 3px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    border: 1px solid #F2994A;
+    transition: .3s;
+}
+@mixin mini-text {
+    font-size: 18px;
+    color: #8476AA;
+}
+
+.main__page {
+    width: 54%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+
+    &-text {
+        width: 500px;
+
+
+        p:nth-child(1) {
+            font-size: 44px;
+            font-weight: bold;
+            color: #99EFD0;
+        }
+        p:nth-child(2) {
+            @include mini-text;
+        }
+        .learn__more {
+            @include button;
+            margin-right: 15px;
+            background: #F2994A;
+            color: white;
+
+            &:hover {
+                transition: .3s;
+                border: 1px solid #fff;
+                background: #f2984a1c;
+            }
+        }
+        .demo {
+            @include button;
+            color: #F2994A;
+            background: none;
+            
+            &:hover {
+                transition: .3s;
+                color: #fff;
+                border: 1px solid #fff;
+            }
+        }
+        .main__page-video {
+            display: flex;
+            margin-top: 60px;
+
+            iframe {
+                margin-right: 20px;
+                width: 140px;
+                height: 80px;
+            }
+
+            .video__text {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                
+                p {
+                    @include mini-text;
+                    margin: 0;
+                }
+                p:nth-child(2) {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

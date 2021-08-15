@@ -1,0 +1,5 @@
+{
+    "port": 5000,
+    "jwtSecret": "Gern5051",
+    "mongoUrl": "mongodb+srv://Gern:Enot2001@cluster0.pvd97.mongodb.net/app?retryWrites=true&w=majority"
+}
